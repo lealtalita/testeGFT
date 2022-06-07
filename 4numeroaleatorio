@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package pkg4numeroaleatorio;
+import java.util.Objects;
+import java.util.Random;
+import java.util.Scanner;
+/**
+ *
+ * @author Talita
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Scanner s=new Scanner(System.in);
+        System.out.println("Adivinhe um número de 0 a 10:");
+        Integer n= s.nextInt();
+        Random aleatorio = new Random();
+        int valor = aleatorio.nextInt(10);
+        if (n != valor){
+        System.out.println("Você errou o número aleatório: " + valor);
+        System.out.println("Tente novamente.");
+        }else{
+        System.out.println("Você acertou o número aleatório: " + valor);
+        }
+        
+        }
+    }
+    
